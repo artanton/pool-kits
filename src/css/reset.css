@@ -6,6 +6,11 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: unset;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
 }
 
 p:last-child {
