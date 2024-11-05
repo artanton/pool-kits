@@ -1,0 +1,82 @@
+.head-section {
+  height: 1395px;
+  width: 1440px;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../media/images/head.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.head {
+  padding-left: 100px;
+  padding-top: 276px;
+  width: 621px;
+  margin-bottom: 188px;
+}
+.title {
+  margin-bottom: 25px;
+}
+.title::before {
+  content: 'Welcome to Pool Kits';
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  text-align: start;
+}
+
+.head-section-text {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.36;
+  margin-bottom: 33px;
+  text-align: start;
+}
+
+.benefits-container{
+    padding: 0 100px;
+}
+
+.benefits-head{
+    width: 204px;
+    margin-bottom: 24px;
+}
+.new-line {
+    display: block;
+}
+
+.benefits{
+    border-top: 1px solid #FFFFFF; 
+    padding-top: 32px;
+}
+
+.benefit-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefit-item{
+  width: 251px; 
+  text-align: left;
+}
+
+.benefit-logo{
+   height: 64px; 
+   width: 64px;
+   border: none;
+  outline: none;
+   border-radius: 50%;
+   background: rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(4px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+.benefit-head{
+margin-bottom: 12px;
+}
+
