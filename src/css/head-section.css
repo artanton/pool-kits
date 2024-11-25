@@ -3,7 +3,7 @@
   width: 1440px;
 
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../img/head.jpeg');
+    url('../img/head.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,6 +26,13 @@
   opacity: 0.6;
   margin-bottom: 16px;
   text-align: start;
+  background: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
+  ); /* Градиент для текста */
+  -webkit-background-clip: text; /* Позволяет тексту "клипаться" фоном */
+  -webkit-text-fill-color: transparent; /* Делает текст прозрачным, чтобы отобразить фоновый градиент */
+  background-clip: text;
 }
 
 .head-section-text {

@@ -34,7 +34,7 @@ main {
   flex-grow: 1;
 }
 
-button {
+.green-button {
   box-sizing: border-box;
 /* height:56px; */
   padding: 17px 38px;
@@ -48,6 +48,23 @@ button {
   background: rgba(43, 183, 158, 1);
 
 }
+
+.transparent-btn{
+  box-sizing: border-box;
+  max-width: 156px;
+  padding: 17px 32px;
+  font-size: 16px;
+  color: white;
+  line-height: 1.4;
+  font-weight: 800;
+  border: 1px solid white ;
+  outline: none;
+  border-radius: 8px;
+  background: transparent;
+ 
+
+}
+
 
 h1, h2 {
   font-size: 56px;
@@ -68,7 +85,7 @@ h4{
   line-height: 1.37;
 }
 
-p {
+.p-white {
   background: linear-gradient(
     rgba(255, 255, 255, 1),
     rgba(255, 255, 255, 1)
@@ -78,12 +95,4 @@ p {
   background-clip: text;
 }
 
-::before{
-  background: linear-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 1)
-  ); /* Градиент для текста */
-  -webkit-background-clip: text; /* Позволяет тексту "клипаться" фоном */
-  -webkit-text-fill-color: transparent; /* Делает текст прозрачным, чтобы отобразить фоновый градиент */
-  background-clip: text;
-}
+
