@@ -4,11 +4,12 @@
   width: 1375px;
   margin: 0 auto;
   background: linear-gradient(rgba(33, 39, 39, 0.85), rgba(33, 39, 39, 0.85)),
-    url('../img/about-us.png');
+    url('../img/about-us.jpg');
   border-radius: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 80px;
 }
 
 .about-us-head{

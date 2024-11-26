@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   background-color: white;
-  z-index: 10;
+  z-index: 100;
 }
 .company-logo{
   
@@ -62,7 +62,6 @@
   margin-right: 71px;
 }
 .nav-list {
-  font-size: px;
   font-weight: 700;
   line-height: 1.4;
   width: 440px;
