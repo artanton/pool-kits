@@ -53,11 +53,13 @@
 }
 .project-order-btn{
   position: absolute;
-  
-  transform: translateX(100%);
+  bottom: 64px;
+  right: 68px;
+  z-index: 10;
+  transform: translateX(150%);
 }
 
-.img-item-right:hover .overlay-pool-shape-right{
+.project-gallery-left-item:hover .project-order-btn{
   transform:translateX(0%);
 }
 
