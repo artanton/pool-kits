@@ -5,32 +5,95 @@
     position: relative;
     
 }
-.cta-section:hover .cta-image {
-    transform-origin: top center;
-    transform: scale(1.5);
-  }
+
+
+.cta-container{
+  position: relative;
+  margin:0 auto;
+  width: 1062px;
+  height: 570px;
+  border-radius: 10px;
+  border: none;
+  outline: none;  
+  transition: transform 0.6s ease-in-out;
+}
+
+.cta-section:hover .cta-container {
+  transform-origin: top center;
+  transform: scale(1.5);
+}
 
 .cta-image{
-    width: 1062px;
-    height: 570px;
-    object-fit: cover ;
-    margin: 0 auto;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    
+ 
+  height: 100%;
+  width: 100%;
+  object-fit: cover ;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: none;
+  outline: none;  
 }
-.cta-image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(180deg,
-     rgba(0, 0, 0, 0) 57.29%,
-      rgba(0, 0, 0, 0.4) 100%);
-    z-index: 1;
-    
-  }
+
+.cta-overlay {
+  position: absolute; 
+   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.6); 
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.cta-section:hover .cta-overlay {
+ opacity: 1; 
+}
+
+
+.cta-text{
+position:absolute;
+top: 196px;
+left:50%;
+transform: translateX(-50%);
+text-align: center;
+width: 989px;
+font-size: 90px;
+font-weight: 800;
+line-height: 1.3;
+z-index: 15;
+opacity: 0;
+transition: opacity 0.6s ease-in-out;
+}
+.cta-section:hover .cta-text {
+  opacity: 1;
+ 
+}
+
+.cta-text::before {
+   all: unset;
+  content: 'Let’s make it happen';
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  z-index: 20;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  opacity: 0.6;
+}
+
+.cta-button{
+  position:absolute;
+top: 521px;
+left:50%;
+transform: translateX(-50%);
+z-index: 15;
+opacity: 0;
+transition: opacity 0.6s ease-in-out;
+}
+.cta-section:hover .cta-button {
+  opacity: 1;
+ 
+}
