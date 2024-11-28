@@ -177,12 +177,12 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background: url('/img/project1.jpg');
-  background-position: right -700px top -50px;
+  background: url('/img/project22.jpg');
+  background-position: right -700px top 0px;
  
   background-size: cover;
   background-repeat: no-repeat;
-  transform: scale(1.5);
+ 
   opacity: 0;
   }
 
@@ -193,14 +193,13 @@
  } */
 
 .project-right-img-container {
-  width: 358px;
+ 
   height: 700px;
-  transform: scale(1.2);
   position: relative;
 }
 
 .project-right-img {
-  width: 358px;
+ transform: scale(1.04);
   height: 700px;
   border: none;
   outline: none;
