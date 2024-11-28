@@ -229,3 +229,53 @@
   width: 306px;
   margin-bottom: 32px;
 }
+
+/**
+    |============================
+    |  project Animations
+    |============================
+  */
+
+  /* Turn off animations */
+
+  .project-section:not(.visible) .img-item-left:hover .left-head-pool-shape,
+  /* .project-section:not(.visible) .img-item-left:not(:hover) .left-head-pool-shape, */
+  .project-section:not(.visible) .img-item-left:hover .pool-shape-img-left,
+  .project-section:not(.visible) .img-item-left:hover .overlay-pool-shape-left,
+  /* .project-section:not(.visible) .img-item-left:not(:hover) .overlay-pool-shape-left, */
+  
+  .project-section:not(.visible) .img-item-right:hover .right-head-pool-shape,
+  /* .project-section:not(.visible) .img-item-right:not(:hover) .right-head-pool-shape, */
+  .project-section:not(.visible) .img-item-right:hover .pool-shape-img-right,
+  .project-section:not(.visible) .img-item-right:hover .overlay-pool-shape-right
+  /* .project-section:not(.visible) .img-item-right:not(:hover) .overlay-pool-shape-right */
+  {
+    animation: none; 
+    transform: none;
+    opacity: 1; 
+    transition: none; 
+  }
+  
+  /* Animatons when visible */
+  
+  /* .project-section.visible .project-gallery-left-item:hover .project-order-btn {
+    animation: leftButtonransformIn 500ms linear alternate forwards;
+  }
+  .project-section.visible .project-gallery-left-item:not(:hover) .project-order-btn {
+    animation: leftButtonransformOut 100ms linear alternate forwards;
+  }
+  
+  .project-section.visible .project-gallery-left-item .project-left-img {
+    animation: leftImgTransformIn 500ms linear alternate forwards;
+  }
+  .project-section.visible .project-gallery-left-item:not(:hover) .project-order-btn {
+    animation: leftButtonransformOut 100ms linear alternate forwards;
+  }
+  
+  .project-section.visible .img-item-left:not(:hover) .overlay-pool-shape-left {
+    animation: leftPoolShapeOverlayAnimateOut 300ms linear alternate forwards;
+  } */
+  
+  
+  
+ 

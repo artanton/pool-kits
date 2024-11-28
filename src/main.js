@@ -1,4 +1,5 @@
 const poolShapeSection = document.querySelector('.pool-shape-section');
+const projectSection = document.querySelector('.project-section')
 const ctaSection = document.querySelector('.cta-section');
 const ctaContainer = document.querySelector('.cta-container');
 const ctaOverlay = document.querySelector('.cta-overlay');
@@ -24,6 +25,25 @@ const poolShapeObserver = new IntersectionObserver(
   poolShapeObserverOptions
 );
 
+const projectObserverCallback = (entries, observer)=>{
+  entries.forEach(entry=>{
+if(entry.isIntersecting){
+  projectSection.classList.add('visible');
+  observer.unobserve(entry.target);
+}
+  });
+};
+
+const projectObserverOptions = {
+  root: null,
+  threshold:0.1
+}
+
+const projectObserver = new IntersectionObserver(
+  projectObserverCallback,
+  projectObserverOptions
+)
+
 
 
 const ctaObserverCallback = (entries, observer) => {
@@ -47,4 +67,5 @@ const ctaObserverOptions = {
 const ctaObserver = new IntersectionObserver(ctaObserverCallback, ctaObserverOptions);
 
 poolShapeObserver.observe(poolShapeSection);
+projectObserver.observe(projectSection);
 ctaObserver.observe(ctaSection);
