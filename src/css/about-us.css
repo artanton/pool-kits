@@ -1,6 +1,6 @@
-.about-us-section{
+.about-us-section {
   height: 820px;
-  box-sizing: border-box ;
+  box-sizing: border-box;
   width: 1375px;
   margin: 0 auto;
   background: linear-gradient(rgba(33, 39, 39, 0.85), rgba(33, 39, 39, 0.85)),
@@ -12,7 +12,7 @@
   margin-bottom: 80px;
 }
 
-.about-us-head{
+.about-us-head {
   margin-left: 68px;
   padding-top: 109px;
   width: 670px;
@@ -30,40 +30,38 @@
   text-align: start;
 }
 
-.about-us-info{
+.about-us-info {
   max-width: 1240px;
   margin: 0 auto 60px auto;
   display: flex;
   justify-content: space-between;
-  }
-
-.about-us-info-text{
-width: 610px;
 }
 
-.how-we-work-container{
+.about-us-info-text {
+  width: 610px;
+}
+
+.how-we-work-container {
   max-width: 1240px;
   margin: 0 auto 0 70px;
-  
 }
-.how-we-work-head{
+.how-we-work-head {
   margin-bottom: 24px;
 }
 
 .work-features-list {
   display: flex;
   justify-content: space-between;
-  border-top:1px solid rgba(225, 225, 225, 0.2);
+  border-top: 1px solid rgba(225, 225, 225, 0.2);
 }
-.work-feature{
+.work-feature {
   width: 260px;
-
 }
 
-.work-feature-head{
+.work-feature-head {
   margin-bottom: 12px;
 }
-.work-feature-head::before{
+.work-feature-head::before {
   content: '';
   display: block;
   width: 54px;
@@ -73,7 +71,7 @@ width: 610px;
   margin-bottom: 16px;
   text-align: start;
   padding-top: 20px;
-  border-top:1px solid white;
+  border-top: 1px solid white;
 }
 
 .work-feature:nth-child(1) .work-feature-head::before {
@@ -91,4 +89,3 @@ width: 610px;
 .work-feature:nth-child(4) .work-feature-head::before {
   content: '04';
 }
-

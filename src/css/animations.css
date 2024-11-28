@@ -1,18 +1,221 @@
-@keyframes slide {
-  from {
-    transform: translateX(-140%) translateY(-50%);
+/* Our project  */
+
+@keyframes leftButtonransformIn {
+  0% {
+    transform: translateX(150%);
   }
-  to {
-    transform: translateX(-104%) translateY(-50%);
+
+  30% {
+    transform: translateX(0%);
+  }
+  45% {
+    transform: translateX(-30%);
+  }
+
+  90% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
-@keyframes stretch {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(100%) scale(0.2);
+
+@keyframes leftButtonransformOut {
+  0% {
+    transform: translateX(0%);
   }
-  to {
+
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+@keyframes leftImgTransformIn {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(1.5);
+  }
+  45% {
+    transform: scale(1.7);
+  }
+
+  90% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes leftImgTransformOut {
+  0% {
+    transform: scale(1.5);
+  }
+  40% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(0.9);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Pool Shapes */
+@keyframes leftAnimateTransformIn {
+  0% {
+    z-index: 20;
+    transform: translateY(0);
+  }
+
+  30% {
+    z-index: 20;
+    transform: translateY(-300px);
+  }
+  45% {
+    z-index: 20;
+    transform: translateY(-350px);
+  }
+
+  90% {
+    z-index: 20;
+    transform: translateY(-280px);
+  }
+
+  100% {
+    z-index: 20;
+    transform: translateY(-300px);
+  }
+}
+
+@keyframes leftAnimateTransformOut {
+  0% {
+    z-index: 20;
+    transform: translateY(-300px);
+  }
+  40% {
+    z-index: 20;
+    transform: translateY(0px);
+  }
+  45% {
+    z-index: 20;
+    transform: translateY(40px);
+  }
+
+  90% {
+    z-index: 20;
+    transform: translateY(-20px);
+  }
+  100% {
+    z-index: 10;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rightAnimateTransformIn {
+  0% {
+    z-index: 20;
+    transform: translateY(0);
+  }
+
+  30% {
+    z-index: 20;
+    transform: translateY(-220px);
+  }
+  45% {
+    z-index: 20;
+    transform: translateY(-270px);
+  }
+
+  90% {
+    z-index: 20;
+    transform: translateY(-200px);
+  }
+
+  100% {
+    z-index: 20;
+    transform: translateY(-220px);
+  }
+}
+
+@keyframes rightAnimateTransformOut {
+  0% {
+    z-index: 20;
+    transform: translateY(-220px);
+  }
+  40% {
+    z-index: 20;
+    transform: translateY(0px);
+  }
+  45% {
+    z-index: 20;
+    transform: translateY(40px);
+  }
+
+  90% {
+    z-index: 20;
+    transform: translateY(-20px);
+  }
+  100% {
+    z-index: 10;
+    transform: translateY(0);
+  }
+}
+
+/* CTA section */
+
+@keyframes ctaContainer {
+  0% {
+    transform-origin: top center;
+    transform: scale(1);
+  }
+
+  100% {
+    transform-origin: top center;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes ctaOverlay {
+  0% {
+    transform-origin: top center;
+    opacity: 0;
+  }
+
+  100% {
+    transform-origin: top center;
     opacity: 1;
-    transform: translateX(-50%) translateY(100%) scale(1);
+  }
+}
+
+@keyframes ctaText {
+  0% {
+    transform-origin: top center;
+    opacity: 0;
+  }
+
+  100% {
+    transform-origin: top center;
+    opacity: 1;
+  }
+}
+
+@keyframes ctaButton {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

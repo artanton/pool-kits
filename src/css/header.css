@@ -11,12 +11,11 @@
   background-color: white;
   z-index: 100;
 }
-.company-logo{
-  
+.company-logo {
   width: 136px;
   display: flex;
   align-items: center;
-   margin: 24px;
+  margin: 24px;
   gap: 10px;
   margin-right: 375px;
 }
@@ -24,39 +23,35 @@
   position: relative;
   width: 28.9px;
   height: 28.27px;
-          
 }
-
 
 .rect1 {
   position: absolute;
   width: 16.96px;
   height: 28.27px;
-  border-radius: 5px 0px 5px 5px; 
-  background-color: black; 
-  top: 0; 
-  left: 0; 
+  border-radius: 5px 0px 5px 5px;
+  background-color: black;
+  top: 0;
+  left: 0;
 }
 
 .rect2 {
   position: absolute;
   width: 11.94px;
   height: 15.71px;
-  border-radius: 0px 5px 5px 0px; 
-  background-color: black; 
-  top: 0; 
-  left: 16.96px; 
+  border-radius: 0px 5px 5px 0px;
+  background-color: black;
+  top: 0;
+  left: 16.96px;
 }
 
-.logo-name{
+.logo-name {
   font-size: 22px;
   font-weight: 700;
   line-height: 1.4;
-
-
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   margin-right: 71px;

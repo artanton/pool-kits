@@ -1,15 +1,14 @@
-
-  /**
+/**
     |============================
     |  Pool Shape Section text part
     |============================
   */
-  .pool-shape-section {
-  display: flex;  
+.pool-shape-section {
+  display: flex;
   gap: 108px;
 }
 .pool-shape-info {
-    color: black;
+  color: black;
   padding-top: 139px;
   padding-left: 100px;
   width: 621px;
@@ -19,7 +18,7 @@
   margin-bottom: 25px;
 }
 .pool-shape-title::before {
-  content: 'Let’s Get Started!';
+  content: "Let's Get Started!";
   color: rgba(33, 39, 39, 0.6);
   display: block;
   font-size: 18px;
@@ -44,7 +43,7 @@
   margin-bottom: 101px;
 }
 
-  /**
+/**
     |============================
     |  Pool Shape Section images part
     |============================
@@ -58,7 +57,7 @@
   gap: 20px;
 }
 
-  /**
+/**
     |============================
     |  Pool Shape Section left image
     |============================
@@ -74,54 +73,48 @@
   position: relative;
 }
 
-
 .img-item-left::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(180deg,
-     rgba(0, 0, 0, 0) 57.29%,
-      rgba(0, 0, 0, 0.4) 100%);
-    z-index: 1;
-    
-  }
-
-
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 57.29%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  z-index: 1;
+}
 
 /* left image head */
 
-.left-head-pool-shape{
-    position: absolute;
-    left: 24px;
-    bottom: 32px;
-    
+.left-head-pool-shape {
+  position: absolute;
+  left: 24px;
+  bottom: 32px;
 
-    z-index: 10; 
+  z-index: 10;
 }
 
 .left-head-pool-shape::before {
-    content: '01/03 Offers';
-    display: block;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 10px;
-    text-align: start;
-    background: linear-gradient(
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1)
-    ); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    background-clip: text;
-  }
+  content: '01/03 Offers';
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  text-align: start;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-  .img-item-left:hover .left-head-pool-shape{ 
-    animation: leftAnimateTransformIn 500ms linear alternate forwards;    
+.img-item-left:hover .left-head-pool-shape {
+  animation: leftAnimateTransformIn 500ms linear alternate forwards;
 }
 .img-item-left:not(:hover) .left-head-pool-shape {
   animation: leftAnimateTransformOut 500ms linear alternate forwards;
@@ -135,108 +128,55 @@
   animation-fill-mode: forwards;
 } */
 
-
-@keyframes leftAnimateTransformIn {
-  0% {
-    z-index: 20;
-    transform: translateY(0);
-  }
-
-  30% {
-    z-index: 20;
-    transform: translateY(-300px);
-  }
-  45% {
-    z-index: 20;
-    transform: translateY(-350px);
-  }
-
-  90% {
-    z-index: 20;
-    transform: translateY(-280px);
-  }
-
-  100% {
-    z-index: 20;
-    transform: translateY(-300px);
-  }
-}
-
-@keyframes leftAnimateTransformOut {
-  0% {
-    z-index: 20;
-    transform: translateY(-300px);
-    
-  }
-  40% {
-    z-index: 20;
-    transform: translateY(0px);
-  }
-  45% {
-    z-index: 20;
-    transform: translateY(40px);
-  }
-
-  90% {
-    z-index: 20;
-    transform: translateY(-20px);
-  }
-  100% {
-    z-index: 10;
-    transform: translateY(0);
-  }
-}
-
-  /* .img-item-left:hover .left-head-pool-shape{   
+/* .img-item-left:hover .left-head-pool-shape{   
     bottom: 335px;
     z-index: 20;    
 } */
 
 .pool-shape-img-left {
-    width: 396px;
-    height: 600px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: -45px -40px;
-    transform: scale(1.3); 
-    /* transition: transform 0.1s linear; */
-  }
-
-  .img-item-left:hover .pool-shape-img-left {
-    transform: scale(1.5);
-}
-  /* right image overlay and text */
-  
-  .overlay-pool-shape-left {
-    position: absolute;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    gap: 28px;
-    padding: 0 24px 24px 24px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.4);  
-    transition: opacity 0.3s linear;  
-  }
-
-  .img-item-left:hover .overlay-pool-shape-left{
-    opacity: 1;
+  width: 396px;
+  height: 600px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: -45px -40px;
+  transform: scale(1.3);
 }
 
-  /**
+.img-item-left:hover .pool-shape-img-left {
+  transform: scale(1.5);
+}
+/* right image overlay and text */
+
+.overlay-pool-shape-left {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 28px;
+  padding: 0 24px 24px 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s linear;
+}
+
+.img-item-left:hover .overlay-pool-shape-left {
+  opacity: 1;
+}
+
+/**
     |============================
     |  Pool Shape Section right image
     |============================
   */
- 
+
 .img-item-right {
   width: 296px;
 
@@ -249,131 +189,73 @@
 }
 
 .img-item-right::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 60.42%,
     rgba(0, 0, 0, 0.4) 100%
   );
-    z-index: 1;
-   
-  }
+  z-index: 1;
+}
 
 .container-right {
   width: 770px;
   height: 600px;
   position: relative;
- }
+}
 
- /* right image head */
+/* right image head */
 
- .right-head-pool-shape{
-    position: absolute;
-    left: 24px;
-    bottom: 32px;
+.right-head-pool-shape {
+  position: absolute;
+  left: 24px;
+  bottom: 32px;
 
-    z-index: 10; 
+  z-index: 10;
 }
 
 .right-head-pool-shape::before {
-    content: '02/03 Offers';
-    display: block;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 10px;
-    text-align: start;
-    background: linear-gradient(
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1)
-    ); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+  content: '02/03 Offers';
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  text-align: start;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
-  .img-item-right:hover .right-head-pool-shape{ 
-    animation: rightAnimateTransformIn 500ms linear alternate forwards;    
+.img-item-right:hover .right-head-pool-shape {
+  animation: rightAnimateTransformIn 500ms linear alternate forwards;
 }
 .img-item-right:not(:hover) .right-head-pool-shape {
   animation: rightAnimateTransformOut 500ms linear alternate forwards;
 }
 
-@keyframes rightAnimateTransformIn {
-  0% {
-    z-index: 20;
-    transform: translateY(0);
-  }
-
-  30% {
-    z-index: 20;
-    transform: translateY(-220px);
-  }
-  45% {
-    z-index: 20;
-    transform: translateY(-270px);
-  }
-
-  90% {
-    z-index: 20;
-    transform: translateY(-200px);
-  }
-
-  100% {
-    z-index: 20;
-    transform: translateY(-220px);
-  }
-}
-
-@keyframes rightAnimateTransformOut {
-  0% {
-    z-index: 20;
-    transform: translateY(-220px);
-    
-  }
-  40% {
-    z-index: 20;
-    transform: translateY(0px);
-  }
-  45% {
-    z-index: 20;
-    transform: translateY(40px);
-  }
-
-  90% {
-    z-index: 20;
-    transform: translateY(-20px);
-  }
-  100% {
-    z-index: 10;
-    transform: translateY(0);
-  }
-}
-
-
 .pool-shape-img-right {
-    width: 296px;
-    height: 600px;
-    border: none;
-    outline: none;
-    object-position: -70px;
-    object-fit: cover;
-    transform: scale(1.1);
-    /* transition: transform 0.1s ease-in-out; */
-  }
-
-  .img-item-right:hover .pool-shape-img-right {
-    transform: scale(1.9);
-   
+  width: 296px;
+  height: 600px;
+  border: none;
+  outline: none;
+  object-position: -70px;
+  object-fit: cover;
+  transform: scale(1.1);
 }
 
-  /* right image overlay and text */
+.img-item-right:hover .pool-shape-img-right {
+  transform: scale(1.9);
+}
+
+/* right image overlay and text */
 
 .overlay-pool-shape-right {
   position: absolute;
@@ -391,16 +273,7 @@
   z-index: 10;
   background: rgba(0, 0, 0, 0.4);
   transition: opacity 0.4s ease-in-out;
- 
 }
-.img-item-right:hover .overlay-pool-shape-right{
+.img-item-right:hover .overlay-pool-shape-right {
   opacity: 1;
 }
-
-
-
-
-
-/* Animate: Smart animate; */
-/* Spring: { mass: 1, stiffness: 300, damping: 20 }; */
-
