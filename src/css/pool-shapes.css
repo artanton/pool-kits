@@ -1,3 +1,27 @@
+.pool-shape-section:not(.visible) .img-item-left:hover .left-head-pool-shape,
+.pool-shape-section:not(.visible) .img-item-left:hover .pool-shape-img-left,
+.pool-shape-section:not(.visible) .img-item-right:hover .right-head-pool-shape,
+.pool-shape-section:not(.visible) .img-item-right:hover .pool-shape-img-right {
+  animation: none; /* Отключаем анимацию */
+  transform: none; /* Убираем масштаб */
+  opacity: 1; /* Скрытые элементы остаются видимыми */
+  transition: none; /* Убираем все переходы */
+}
+
+/* Анимации активны, только если секция видима */
+.pool-shape-section.visible .img-item-left:hover .left-head-pool-shape {
+  animation: leftAnimateTransformIn 500ms linear alternate forwards;
+}
+.pool-shape-section.visible .img-item-left:not(:hover) .left-head-pool-shape {
+  animation: leftAnimateTransformOut 500ms linear alternate forwards;
+}
+
+.pool-shape-section.visible .img-item-right:hover .right-head-pool-shape {
+  animation: rightAnimateTransformIn 500ms linear alternate forwards;
+}
+.pool-shape-section.visible .img-item-right:not(:hover) .right-head-pool-shape {
+  animation: rightAnimateTransformOut 500ms linear alternate forwards;
+}
 /**
     |============================
     |  Pool Shape Section text part
@@ -113,12 +137,12 @@
   background-clip: text;
 }
 
-.img-item-left:hover .left-head-pool-shape {
+/* .img-item-left:hover .left-head-pool-shape {
   animation: leftAnimateTransformIn 500ms linear alternate forwards;
 }
 .img-item-left:not(:hover) .left-head-pool-shape {
   animation: leftAnimateTransformOut 500ms linear alternate forwards;
-}
+} */
 
 /* .img-item-left:not(:hover) .left-head-pool-shape {
   animation-name: animateTransformOut;
@@ -234,12 +258,12 @@
   background-clip: text;
 }
 
-.img-item-right:hover .right-head-pool-shape {
+/* .img-item-right:hover .right-head-pool-shape {
   animation: rightAnimateTransformIn 500ms linear alternate forwards;
 }
 .img-item-right:not(:hover) .right-head-pool-shape {
   animation: rightAnimateTransformOut 500ms linear alternate forwards;
-}
+} */
 
 .pool-shape-img-right {
   width: 296px;
