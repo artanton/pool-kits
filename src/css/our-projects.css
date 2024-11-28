@@ -193,13 +193,14 @@
  } */
 
 .project-right-img-container {
-  width: 1060px;
+  width: 358px;
   height: 700px;
+  transform: scale(1.2);
   position: relative;
 }
 
 .project-right-img {
-  width: 1060px;
+  width: 358px;
   height: 700px;
   border: none;
   outline: none;

@@ -75,7 +75,7 @@
   0% {
     opacity: 0;
   }
-  
+
   100% {
     opacity: 1;
   }
@@ -138,7 +138,6 @@
   }
 
   100% {
-
     transform: scale(1.5);
   }
 }
@@ -149,7 +148,6 @@
   }
 
   100% {
-
     opacity: 1;
   }
 }
@@ -160,7 +158,6 @@
   }
 
   100% {
-
     opacity: 0;
   }
 }
@@ -221,8 +218,7 @@
   }
 
   100% {
-
-    transform: scale(1.9);
+    transform: translateY(-120px) scale(1.6);
   }
 }
 
@@ -232,7 +228,6 @@
   }
 
   100% {
-
     opacity: 1;
   }
 }
@@ -243,12 +238,9 @@
   }
 
   100% {
-
     opacity: 0;
   }
 }
-
-
 
 /* CTA section */
 
