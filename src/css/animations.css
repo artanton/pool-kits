@@ -1,6 +1,6 @@
 /* Our project  */
 
-@keyframes leftButtonransformIn {
+@keyframes leftProjectButtonransformIn {
   0% {
     transform: translateX(150%);
   }
@@ -21,7 +21,7 @@
   }
 }
 
-@keyframes leftButtonransformOut {
+@keyframes leftProjectButtonransformOut {
   0% {
     transform: translateX(0%);
   }
@@ -31,7 +31,7 @@
   }
 }
 
-@keyframes leftImgTransformIn {
+@keyframes leftProjectImgTransformIn {
   0% {
     transform: scale(1);
   }
@@ -52,7 +52,7 @@
   }
 }
 
-@keyframes leftImgTransformOut {
+@keyframes leftProjectImgTransformOut {
   0% {
     transform: scale(1.5);
   }
@@ -68,6 +68,16 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes rightProjectImgTransformIn {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
   }
 }
 
