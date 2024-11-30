@@ -23,10 +23,13 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: Manrope;
+  background-color: black;
 }
 
 main {
+  z-index: 1;
   flex-grow: 1;
+  background-color: white;
 }
 
 .green-button {
