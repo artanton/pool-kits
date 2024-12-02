@@ -262,23 +262,15 @@
   .left-head-pool-shape,
 .pool-shape-section:not(.visible) .img-item-left:hover .pool-shape-img-left,
 .pool-shape-section:not(.visible) .img-item-left:hover .overlay-pool-shape-left,
-.pool-shape-section:not(.visible)
-  .img-item-left:not(:hover)
-  .overlay-pool-shape-left,
+.pool-shape-section:not(.visible) .img-item-left:not(:hover) .overlay-pool-shape-left,
 .pool-shape-section:not(.visible) .img-item-right:hover .right-head-pool-shape,
-.pool-shape-section:not(.visible)
-  .img-item-right:not(:hover)
-  .right-head-pool-shape,
+.pool-shape-section:not(.visible) .img-item-right:not(:hover) .right-head-pool-shape,
 .pool-shape-section:not(.visible) .img-item-right:hover .pool-shape-img-right,
-.pool-shape-section:not(.visible)
-  .img-item-right:hover
-  .overlay-pool-shape-right
-  .pool-shape-section:not(.visible)
-  .img-item-right:not(:hover)
-  .overlay-pool-shape-right {
+.pool-shape-section:not(.visible) .img-item-right:hover .overlay-pool-shape-right,
+  .pool-shape-section:not(.visible) .img-item-right:not(:hover) .overlay-pool-shape-right {
   animation: none;
   transform: none;
-  opacity: 1;
+  /* opacity: 1; */
   transition: none;
 }
 
@@ -315,11 +307,11 @@
   animation: rightPoolShapeImgAnimate linear forwards;
 }
 .pool-shape-section.visible .img-item-right:hover .overlay-pool-shape-right {
-  animation: leftPoolShapeOverlayAnimateIn 300ms linear alternate forwards;
+  animation: rightPoolShapeOverlayAnimateIn 300ms linear alternate forwards;
 }
 
 .pool-shape-section.visible
   .img-item-right:not(:hover)
   .overlay-pool-shape-right {
-  animation: leftPoolShapeOverlayAnimateOut 300ms linear alternate forwards;
+  animation: rightPoolShapeOverlayAnimateOut 300ms linear alternate forwards;
 }
