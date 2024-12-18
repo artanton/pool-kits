@@ -60,6 +60,6 @@
 
 ---
 ### Instructions
-- **Run the Development Server:** npm start.
+- **Run the Development Server:** npm run dev
 
 <div style="text-align: center; padding: 20px; font-weight:bold;">Thank you for choosing PoolKits!</div>
